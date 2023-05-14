@@ -73,6 +73,7 @@ header.conteiner {
 }
 
 .header > h1 {
+    font-family: 'Times New Roman', Times, serif;
     cursor:default ;
     font-size: 26px;
     text-transform: uppercase;
@@ -148,7 +149,13 @@ header.conteiner {
     max-width: 100%;
 }
 
-
+/*info-title*/
+.info-title{
+    margin: 24px auto;
+    text-align: center;
+    max-width: 644px;
+    gap: 10px;
+}
 /*interior*/
 .interior-block {
     border-top: solid 2px #6a715c75;
