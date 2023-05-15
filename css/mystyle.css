@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 * {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 a {
     color: inherit;
@@ -23,11 +27,15 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(#9aa482, #868f71);
+    /* background: linear-gradient(#2c3628, #442f1f); */
     background-size: 100%;
-    font-family: system-ui;
-    /* background-image: url(../img/brick.svg); */
-    background-repeat: repeat;
-    background-size: auto;
+    /* font-family: system-ui; */
+    font-family: 'Merriweather', serif;
+    
+}
+
+h1 {
+    font-size: 30px;
 }
 
 html {
@@ -41,7 +49,10 @@ main {
     margin: 0 auto;
     background-color: #9aa482;
     border-color: #d0a16a;
-    box-shadow: 0px 0px 20px 6px #242424;
+    box-shadow: 0px 0px 8px 0 #242424;
+    background-image: url(../img/bg.svg);
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 .conteiner {
@@ -53,7 +64,7 @@ main {
 /*header*/
 
 header.conteiner {
-    background-color: #9aa482;
+    /* background-color: #9aa482; */
     position: sticky;
     top: 0;
     z-index: 2;
@@ -70,13 +81,29 @@ header.conteiner {
     height: 58px;
     border-radius: 0 0 22px 22px;
     padding: 4px;
+    box-shadow: 0 0  8px 0 #000;
 }
 
-.header > h1 {
-    font-family: 'Times New Roman', Times, serif;
-    cursor:default ;
+.header__section {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 33.33%;
+    text-align: center;
+}
+
+
+.header__title {
+    cursor: default;
     font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
     text-transform: uppercase;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Merriweather', serif;
+}
+
+.header__logo {
+    height: 52px;
 }
 
 .number {
@@ -124,9 +151,9 @@ header.conteiner {
 
 .barber-title {
     background: #00000015;
-    padding: 15px;
+    padding: 28px 35px;
     border-radius: 28px;
-    max-width: 552px;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -140,6 +167,7 @@ header.conteiner {
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     align-items: center;
+    
     gap: 15px;
 }
 
@@ -153,13 +181,14 @@ header.conteiner {
 }
 
 /*banner*/
-.banner-conteiner{
+.banner-conteiner {
     margin-top: -20px;
     padding: 0;
-    box-shadow: 0 16px 36px 0px black;
+    box-shadow: 0 0 8px 0px black;
 
 }
-.banner{
+
+.banner {
     background-image: url(../img/barber-work.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -169,8 +198,9 @@ header.conteiner {
     color: #ffffff;
     text-shadow: 0px 0px 9px #000000;
     text-align: center;
+ 
 }
-.banner-title{
+.banner-title {
     padding: 20px;
     border-radius: 15px;
     background-color: #00000035;
@@ -178,19 +208,19 @@ header.conteiner {
     max-width: 400px;
     line-height: 47px;
     box-shadow: 0 0px 12px 0px black;
-
-
-
+    backdrop-filter: blur(8px);
 }
 
 /*price*/
-.price-title{
-    width: 400px;
+.price-title {
+    width: 100%;
 }
 .price{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #6a715c75;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 /*info*/
@@ -207,9 +237,18 @@ header.conteiner {
     text-align: center;
     width: 200px;
 }
-.info-title > img{
-    width: 85px;
+
+.info-title img {
+    transition: filter .3s, transform .3s;
 }
+
+.info-title:hover img { 
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 1));
+    transform: scale(1.1);
+}
+
+
+
 /*about-us*/
 .about-us{
     padding: 24px;
@@ -272,6 +311,6 @@ footer{
     background-size: cover;
     height: 400px;
     margin-top: 53px;
-    box-shadow: 0 0px 36px 0px black;
+    /* box-shadow: 0 0px 36px 0px black; */
 
 }
