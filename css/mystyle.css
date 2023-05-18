@@ -43,16 +43,16 @@ html {
     padding: 0;
 }
 
-main {
+main { 
+    margin: 0 auto;
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
     background-color: #9aa482;
-    border-color: #d0a16a;
-    box-shadow: 0px 0px 8px 0 #242424;
+    border-color: #d0a16a;      
     background-image: url(../img/bg.svg);
     background-repeat: repeat;
     background-size: auto;
+    box-shadow: 0px 0px 8px 0 #242424;
 }
 
 .conteiner {
@@ -64,12 +64,11 @@ main {
 /*header*/
 
 header.conteiner {
-    /* background-color: #9aa482; */
     position: sticky;
     top: 0;
-    z-index: 2;
-    border-radius: 0 0 22px 22px;
     padding: 0 4px 4px;
+    border-radius: 0 0 22px 22px;
+    z-index: 1;
 }
 
 .header {
@@ -99,7 +98,6 @@ header.conteiner {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    /* font-family: 'Times New Roman', Times, serif; */
     font-family: 'Merriweather', serif;
 }
 
@@ -109,6 +107,7 @@ header.conteiner {
 
 .number {
     font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -119,16 +118,65 @@ header.conteiner {
 }
 
 
+
+/*master*/
+.master {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;    
+    margin-top: 18px;
+    gap: 15px;
+}
+
+.master-img {
+    max-width: 328px;
+}
+
+.master-img > img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/*banner*/
+.banner-conteiner {
+    margin-top: -20px;
+    padding: 0;
+    box-shadow: 0 0 8px 0px black;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 231px 0;
+    color: #ffffff;
+    background-image: url(../img/barber-work.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0px 0px 9px #000000;
+}
+
+
+.banner-title {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 482px;
+    background-color: rgba(0, 0, 0, 0.208);
+    backdrop-filter: blur(8px);
+    line-height: 47px;
+    box-shadow: 0 0px 12px 0px black;
+}
 /*barber*/
 .barber {
-    margin-top: 50px;
-    /* padding-top: 18px; */
-    display: flex;
     position: relative;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     gap: 32px;
+    padding: 24px 0;
 }
 
 .barber-img {
@@ -147,70 +195,16 @@ header.conteiner {
 .barber-img > img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 36px 0px black;
-
 }
 
 .barber-title {
-    background: #00000015;
-    padding: 28px 35px;
-    border-radius: 28px;
-    max-width: 580px;
     display: flex;
     flex-direction: column;
     gap: 48px;
-}
-
-
-/*master*/
-.master {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
-}
-
-.master-img {
-    max-width: 328px;
-}
-
-.master-img > img {
-    border-radius: 12px;
-    max-width: 100%;
-}
-
-/*banner*/
-.banner-conteiner {
-    margin-top: -20px;
-    padding: 0;
-    box-shadow: 0 0 8px 0px black;
-
-}
-
-.banner {
-    background-image: url(../img/barber-work.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    padding: 231px 0;
-    color: #ffffff;
-    text-shadow: 0px 0px 9px #000000;
-    text-align: center;
- 
-}
-
-
-.banner-title {
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #00000035;
-    text-align: center;
-    max-width: 482px;
-    line-height: 47px;
-    box-shadow: 0 0px 12px 0px black;
-    backdrop-filter: blur(8px);
+    max-width: 580px;
+    padding: 28px 35px;
+    border-radius: 28px;
+    background: rgba(0, 0, 0, 0.082);
 }
 
 /*price*/
@@ -230,14 +224,24 @@ header.conteiner {
 }
 
 /*info*/
-
+.info-none{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 .info{
-    padding-top: 24px;
-    border-top: solid 2px #6a715c75;
-    margin-top: 54px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:baseline;
+    padding: 24px 0;
+    border-top: solid 2px #6a715c75;
+    border-bottom: solid 2px #6a715c75;
 }
 .info-title{
     text-align: center;
@@ -256,14 +260,12 @@ header.conteiner {
 
 
 /*about-us*/
-.about-us{
-    padding: 24px;
-    border-top: solid 2px #6a715c75;
-    margin-top: 24px;
+.about-us {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 24px;
 }
 .about-us--title{
     max-width: 444px;
@@ -281,11 +283,11 @@ header.conteiner {
 }
 
 .interior {
-    margin-top: 24px;
     display: flex;
     justify-content: space-around;
     gap: 15px;
     flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 .interior > img {
@@ -312,10 +314,22 @@ header.conteiner {
 }
 
 footer {
+    height: 400px;
+    margin-top: 53px;
     background-image: url(../img/map-boss.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
-    margin-top: 53px;
+}
+
+/*media*/
+@media screen and (max-width: 600px) {
+    .header-number{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .number:hover {
+        color: white;
+        transform: scale(1.1);
+    }
 }
