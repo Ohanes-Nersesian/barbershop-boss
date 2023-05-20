@@ -78,7 +78,7 @@ header.conteiner {
     align-items: center;
     height: 58px;
     padding: 4px;
-    background-color: #815c4e;
+    background-color: #ffffff;
     border-radius: 0 0 22px 22px;
     box-shadow: 0 0 8px 0 #000;
 }
@@ -115,6 +115,9 @@ header.conteiner {
 .number:hover {
     color: white;
     transform: scale(1.2);
+}
+.header-number:hover {
+    color: rgb(39, 39, 39);
 }
 
 
