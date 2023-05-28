@@ -6,15 +6,14 @@
     box-sizing: border-box;
 }
 
-
-
 a {
-    color: inherit;
+    color: #000;
     text-decoration: none;
     transition: .4s;
 }
 
-ul li {
+
+ul, li {
     list-style: none;
 }
 
@@ -27,11 +26,8 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(#9aa482, #868f71);
-    /* background: linear-gradient(#2c3628, #442f1f); */
     background-size: 100%;
-    /* font-family: system-ui; */
     font-family: 'Merriweather', serif;
-    
 }
 
 h1 {
@@ -57,7 +53,7 @@ main {
 
 .conteiner {
     margin: auto;
-    padding: 0 8px;
+    padding: 0 24px;
 }
 
 
@@ -111,14 +107,16 @@ header.conteiner {
     text-transform: uppercase;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-.number:hover {
-    color: white;
-
+.number {
+    transition: color .3s;
+    color: #000;
 }
+
 .header-number:hover {
     transform: scale(1.2);
 }
+
+
 
 .number:hover {
     color: aliceblue;
@@ -154,7 +152,7 @@ header.conteiner {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 231px 0;
+    padding: 231px 24px;
     color: #ffffff;
     background-image: url(../img/barber-work.jpg);
     background-repeat: no-repeat;
@@ -162,6 +160,9 @@ header.conteiner {
     text-shadow: 0px 0px 9px #000000;
 }
 
+.banner b {
+    color: #fff;
+}
 
 .banner-title {
     padding: 20px;
@@ -170,6 +171,7 @@ header.conteiner {
     max-width: 482px;
     background-color: rgba(0, 0, 0, 0.208);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     line-height: 47px;
     box-shadow: 0 0px 12px 0px black;
 }
@@ -229,7 +231,7 @@ header.conteiner {
 }
 
 /*info*/
-.info-none{
+.info-none {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -239,7 +241,7 @@ header.conteiner {
     position: absolute;
     width: 1px;
 }
-.info{
+.info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -248,7 +250,7 @@ header.conteiner {
     border-top: solid 2px #6a715c75;
     border-bottom: solid 2px #6a715c75;
 }
-.info-title{
+.info-title {
     text-align: center;
     width: 200px;
 }
@@ -262,6 +264,10 @@ header.conteiner {
     transform: scale(1.1);
 }
 
+.info-title:hover .number {
+    color: aliceblue;
+}
+
 
 
 /*about-us*/
@@ -270,13 +276,15 @@ header.conteiner {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 24px;
+    padding: 24px 0;
 }
-.about-us--title{
+
+.about-us--title {
     max-width: 444px;
     gap: 22px;
 }
-.about-us--title > h2{
+
+.about-us--title > h2 {
     text-align: center;
     padding-top: 12px;
 }
@@ -310,7 +318,7 @@ header.conteiner {
 }
 
 /*location*/
-.location-title{
+.location-title {
     width: 292px;
     padding: 12px;
     margin: 24px auto;
@@ -324,27 +332,31 @@ header.conteiner {
     flex-direction: row-reverse;
     justify-content: space-evenly;
 }
+
 .history-title {
     gap: 18px;
     max-width: 507px;
 
 }
+
 .history-title > h2 {
     text-align: center;
 }
+
 .history-title > p {
     font-size: 14px;
 }
+
 .history-img > img {
     height: 402px;
     border-radius: 12px;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .history-img > img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 36px 0px black;
 }
-
 
 footer {
     height: 400px;
@@ -361,7 +373,16 @@ footer {
         font-size: 12px;
         line-height: 14px;
     }
+    
     .header-number:hover {
         transform: scale(1.1);
+    }
+
+    header.conteiner {
+        padding: 0;
+    }
+
+    .header__section:nth-child(2) {
+        flex: 0 1 22.33%;
     }
 }
