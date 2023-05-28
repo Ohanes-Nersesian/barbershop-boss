@@ -211,10 +211,6 @@ header.conteiner {
     border-radius: 28px;
     background: rgba(0, 0, 0, 0.082);
 }
-    
-.barber-title > p {
-    text-indent: 8px;
-}
 
 /*price*/
 .price-title {
