@@ -309,29 +309,33 @@ header.conteiner {
     max-height: 198px;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.full-space  > img { 
-    position: relative;
-    border-radius: 12px;
-    /* max-height: 198px; */
-    width: 100%;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
-}
-
-.full-space {
-    padding: 12px 20px;
-}
-.full-space > img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0px 36px 0px black;
-    z-index: 1;    
-}
 
 .interior > img:hover {
     transform: scale(1.3);
     box-shadow: 0 0px 36px 0px black;
     z-index: 1;
 }
+
+.full-space {
+    padding: 12px 20px;
+    margin: 0 auto;
+    max-width: 1076px;
+}
+
+.full-space > img { 
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.full-space > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 36px 0px black;
+    z-index: 1;    
+}
+
+
 
 /*location*/
 .location-title {
