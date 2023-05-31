@@ -5,91 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>barbershop boss</title>
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/mystyle.css">
 </head>
 <body>
     <header class="conteiner">
         <div class="header">
-            <img src="./img/logo.svg" alt="logo-boss">
-            <h1>Boss</h1>
-            <a class="number" href="tel:+380637278983">+38 (063)727-89-83</a>
+            <div class="header__section">
+                <img src="./img/logo.svg" alt="logo-boss" class="header__logo">
+            </div>
+            <div class="header__section">
+                <p class="header__title">Boss</p>
+            </div>
+            <div class="header__section">
+                <a class="header-number" href="tel:+380637278983">+38 (063)727-89-83</a>
+            </div>
         </div>
     </header>
     <main>
-        
+        <section class="conteiner banner-conteiner">
+            <div class="banner">
+                <div class="banner-title">
+                    <h1>Барбершоп «Boss»</h1>
+                    <p>Атмосфера справжнього клубу джентельменів.</p>
+                    <p>Запис за телефоном: <a class="number" href="tel:+380637278983"><b>+38(093)727-89-83</b></a> <br>
+                        До зустрічі.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
         <section class="conteiner">
+            <div class="barber">
+                <h2>Price</h2>
+            </div>
             <div class="barber">
                 <div class="barber-img">
                     <img src="./img/barber.jpg" alt="">
-                    <img src="./img/barber-work.jpg" alt="">
                 </div>
-                <div class="barber-title">
-                    <p>
-                       <b>Барбершоп «Boss»</b>  - місце стилю на Преображенській 39/8 біля Солом‘янського ринку! <br>
-                    </p>
-                    <p>
-                        Ми пропонуємо низькі ціни:
-                        <br> стрижка - <b>300 грн</b>  <br> машинкою - <b>200 грн</b>  <br> борода - <b>200 грн</b> . <br>
-                        
-                    </p>
-                    <p>
-                        Атмосфера справжнього клубу джентельменів. <br>
-                        Запис за телефоном: <a class="number" href="tel:+380637278983"><b>+38(093)727-89-83</b></a> <br>
-                        До зустрічі.
-                    </p>
+                <div class="barber-title price-title">
+                        <div class="price">
+                            <p>Стрижка</p>
+                            <p>300 грн</p>
+                        </div>
+                        <div class="price">
+                            <p>Машинкою </p>
+                            <p>200 грн</p>
+                        </div>
+                        <div class="price">
+                            <p>Борода </p>
+                            <p>200 грн</p>
+                        </div>
                 </div>
             </div>
         </section>
         <section class="conteiner">
-            <div class="master">
-                <div class="barber-title">
+            <div class="info-none">
+                <h2>Info</h2>
+            </div>
+            <div class="info">
+                <div class="info-title ">
+                    <img src="./img/pin_n.svg" alt="location">
+                    <p>Преображенська 39/8 біля Солом‘янського ринку</p>
+                </div>
+                <div class="info-title">
+                    <img src="./img/clock_n.svg" alt="time">
+                    <p>з 10:00 до 20:00</p>
+                </div>
+                <a href="tel:+380637278983" rel="phone +38 (063)727-89-83" class="info-title">
+                    <img src="./img/phone_n.svg" alt="call">
+                    <p class="number" >+38 (063)727-89-83</p>
+                </a>
+            </div>
+        </section>
+        <section class="conteiner">
+            <div class="about-us">
+                <div class="about-us--title barber-title">
+                    <h2> Про Нас</h2>
                     <p>
-                        Послуги професійнийного барбера. 
-                    </p>
-                    <p>
-                       <b>Слава Зініченко </b> - переможець чемпіонату України, досвід роботи <b> 15 років</b> <br>
-                    </p>
-                    <p>
-                        Поради для вашого стилю.
+                        Ми пропонуємо послуги з стрижки волосся та бороди тільки для чоловіків.<br>
+                        Маємо свій власний стиль та підхід до роботи, і прагнeмо забезпечити своїм клієнтам високу якість обслуговування та задоволення від результату. <br>
+                        Завжди намагаємось підтримувати позитивну атмосферу в своєму закладі та затишок.
                     </p>
                 </div>
-                <div class="master-img">
+            
+                <div class="interior-block">
+                    <div class="interior">
+                        <img src="./img/working-space.jpg" alt="">
+                        <img src="./img/working-space_2.jpg" alt="">
+                        <img src="./img/interior-1.jpg" alt="">
+                        <img src="./img/interior-2.jpg" alt="">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="full-space">
+                <img src="./img/space.jpg" alt="">
+            </div>
+        </section>
+        <section class="conteiner">
+            <div class="history barber">
+                <div class="history-title barber-title">
+                    <h2>Історія</h2>
+
+                    <p>
+                        Я завжди мріяв про свій маленький бізнес.
+                    </p>
+
+                    <P>
+                    Перший досвід – відкриття перукарні експрес-стрижок, не виправдало мої сподівання.
+                    Тому вирішив не заморочуватись, а працювати барбером в одному з престижних київських барбершопів.
+                    Коли почалась війна роботи не було, а дома сидіти не хотілось.
+                    </P>
+
+                    <p>
+                    На той час в Києві практично не працювали перукарні, багато майстрів виїхало.
+                    Я згадав про свою знайому, у якої поблизу мого будинку був власний  салон-перукарня.
+                    Вона погодилась надати мені робоче місце.   
+                    </p>   
+
+                    <p>
+                    Так у мене появились перші клієнти мого майбутнього барбершопу.
+                    А потім все закрутилось. Вмовив дружину подивитись приміщення, cпланували дизайн інтер’єру, придумали назву.
+                    </p>
+                    <p>Ось так і народився <b>БАРБЕРШОП BOSS!</b>  </p>
+                </div>
+                <div class="history-img ">
                     <img src="./img/working space-barber.jpg" alt="">
                 </div>
             </div>
         </section>
         <section class="conteiner">
-            <div class="info-title barber-title">
-                <h2> Про Нас</h2>
-                <p>
-                    Ми пропонуємо послуги з стрижки волосся та бороди тільки для чоловіків.<br>
-                    Маємо свій власний стиль та підхід до роботи, і прагне забезпечити своїм клієнтам високу якість обслуговування та задоволення від результату.
-                    Завжди намагаємось підтримувати позитивну атмосферу в своєму закладі та затишок.
-                </p>
-            </div>
-        </section>
-        <section class="conteiner">
-            <div class="interior-block">
-                <div class="interior ">
-                    <img src="./img/working-space.jpg" alt="">
-                    <img src="./img/washing.jpg" alt="">
-                    <img src="./img/interior-1.jpg" alt="">
-                    <img src="./img/interior-2.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="conteiner">
             <div class="location">
-                <div class="location-title">
+                <div class="location-title barber-title">
                     <p>
                         Барбершоп <b>«Boss»</b> <br>Преображенській 39/8 <br> біля Солом‘янського ринку!
                     </p>
                 </div>
-                <div class="master-img">
-                    <img src="./img/location.jpg" alt="">
-                </div>
             </div>
         </section>
+        <footer>
+        </footer>
     </main>
 </body>
 </html>
